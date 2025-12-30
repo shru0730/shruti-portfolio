@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shruti Gawade – Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  html, body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('pattern-lightgrey-doodle.svg');
+    background-repeat: repeat;
+    background-size: contain;
+    color: #111827;
+    line-height: 1.6;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 18px 0;
+    background: rgba(255,255,255,0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  nav a {
+    text-decoration: none;
+    color: #0C5F66;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  nav a:hover { color: #09474D; }
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 40px;
+  }
+
+  .profile-img {
+    flex: 0 1 250px;
+    text-align: center;
+  }
+  .profile-img img {
+    width: 90%;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  .profile-img hr {
+    border: none;
+    height: 20px;
+    background: #0C5F66;
+    margin-top: 0px;
+    border-radius: 4px;
+  }
+
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  .about-text h1 {
+    font-size: px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .about-text h1 span {
+    color: #0C5F66;
+    font-weight: 800;
+  }
+  .about-text p {
+    font-size: 15.5px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .resume-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 22px;
+    background: #0C5F66;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .resume-btn:hover { background: #09474D; }
+
+  section {
+    padding: 60px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 40px;
+    color: #0C5F66;
+    margin-bottom: 24px;
+    text-align: justify;
+  }
+
+  .highlight {
+    color: #0f766e;
+    font-weight: 700;
+  }
+
+  .education-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .edu-box {
+    background: rgba(255,255,255,0.95);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1 1 300px;
+    max-width: 500px;
+    text-align: justify;
+  }
+  .edu-box strong { color: #0f766e; }
+  .edu-box span { color: #0f766e; }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .skill {
+    background: rgba(10,127,127,0.1);
+    color: #055b5b;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .contact { text-align: center; }
+  .contact p { margin-bottom: 24px; text-align: justify; }
+  .social { display: flex; gap: 20px; justify-content: center; }
+  .social a { color: #0a7f7f; font-weight: 600; text-decoration: none; }
+  .social a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #055b5b;
+    padding: 40px 0;
+    margin-top: auto;
+  }
+
+  @media (max-width: 900px) {
+    .hero { flex-direction: column; padding: 40px 20%; gap: 30px; }
+    .profile-img img { width: 100%; }
+    .education-container { flex-direction: column; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="profile-img">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHFvg9Tln6GKg/profile-displayphoto-scale_200_200/B4DZrj4EafIEAc-/0/1764759718464?e=2147483647&v=beta&t=DSgX51GrIJAgpIDFaLOtKYhjuPzrAaVH9NBm61-o-6k" alt="Shruti Photo">
+    <hr>
+  </div>
+
+  <div class="about-text">
+    <h1>Hi, I am <span>Shruti</span></h1>
+
+    <p>
+      <em style="color:#0f766e; font-weight:600;">"Design is not just what it looks like, but how it works."</em><br><br>
+
+      Inspired by the vibrant rhythm and creative pulse of  
+      <strong class="highlight">Pune, Maharashtra</strong>, I’m a  
+      <strong class="highlight">curious creator</strong> and  
+      <strong class="highlight">design thinker</strong> who believes  
+      <strong class="highlight">every design should feel intuitive, meaningful, and a little magical</strong>.  
+
+      Currently pursuing my  
+      <strong class="highlight">Master’s in UX Management & Design</strong> at  
+      <strong class="highlight">PFH University – Göttingen</strong>, I love building  
+      <strong class="highlight">human-centered digital experiences</strong> that blend  
+      <strong class="highlight">creativity</strong>, <strong class="highlight">clarity</strong>, and  
+      <strong class="highlight">purposeful storytelling</strong>.  
+
+      With my roots in  
+      <strong class="highlight">Graphic Design</strong> and passion for  
+      <strong class="highlight">UX Strategy</strong>, I turn concepts into polished experiences that  
+      <strong class="highlight">not only look good but work beautifully</strong>.
+
+      If creativity had a universe,  
+      you’d probably find me exploring every corner—sketching, shaping ideas,  
+      and crafting something meaningful.
+    </p>
+
+    <a href="https://drive.google.com/file/d/1J-c78A1hY5KnB1B3GOXQd_Gmt1jcLZZb/view?usp=drive_link" class="resume-btn" target="_blank">View My Resume</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p class="about-text">
+    I’m a <strong class="highlight">Graphic & UX Designer</strong> who loves turning ideas into 
+    <strong class="highlight">purposeful, intuitive, and visually engaging experiences</strong>. 
+    Raised with vibrant culture and creativity in <strong class="highlight">Pune, Maharashtra</strong>, 
+    I grew up believing that every design should feel like a story waiting to unfold.
+
+    <br><br>
+
+    My journey has taken me through <strong class="highlight">branding</strong>, 
+    <strong class="highlight">UI/UX design</strong>, 
+    <strong class="highlight">visual storytelling</strong>,  
+    <strong class="highlight">social media design</strong>,  
+    <strong class="highlight">international student recruitment</strong>, and  
+    <strong class="highlight">community-focused creative projects</strong>.  
+    This mix of creative + operational experience helps me craft solutions that are 
+    <strong class="highlight">insightful, functional, and emotionally expressive</strong>.
+
+    <br><br>
+
+    I’m proud to be recognized by the 
+    <strong class="highlight">India Book of Records</strong> and 
+    <strong class="highlight">Harvard World Records</strong> for creating the 
+    <strong class="highlight">Largest Written Rangoli</strong> —  
+    a reminder that design for me isn’t just a skill, it’s a celebration of  
+    <strong class="highlight">patience, precision, and artistic storytelling</strong>.
+
+    <br><br>
+
+    Currently, I’m pursuing my 
+    <strong class="highlight">Master’s in UX Management & Design at PFH University – Göttingen</strong>,  
+    where I’m refining my ability to blend  
+    <strong class="highlight">strategy, usability, and creative innovation</strong>  
+    into every design decision I make.
+
+    <br><br>
+
+    Whether I’m designing an interface, shaping a brand, illustrating concepts, 
+    or simplifying complex problems, my goal remains the same —  
+    to create <strong class="highlight">meaningful, memorable, and human-centered experiences</strong>  
+    that leave people feeling understood, engaged, and delighted.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="education-container">
+    <div class="edu-box">
+      <strong>PFH University, Göttingen, Germany</strong><br>
+      <span>MSc in UX Management & Design</span> (2025 - Present)
+      <p>Focused on <strong class="highlight">UX Research, Interaction Design, Prototyping, and Design Thinking</strong>.</p>
+    </div>
+
+    <div class="edu-box">
+      <strong>Savitribai Phule Pune University, India</strong><br>
+      <span>Bachelor of Fine Arts (Applied)</span> (2013 - 2017)
+      <p>Specialized in <strong class="highlight">Visual Communication, Typography, Branding, and Graphic Design</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <div class="skills">
+    <span class="skill">UI / UX Design</span>
+    <span class="skill">Wireframing & Prototyping</span>
+    <span class="skill">Typography</span>
+    <span class="skill">Visual Identity</span>
+    <span class="skill">Adobe Illustrator</span>
+    <span class="skill">Figma</span>
+    <span class="skill">Digital Marketing</span>
+    <span class="skill">Research & Usability</span>
+    <span class="skill">Client Relationship</span>
+    <span class="skill">Business Development</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <p>If you'd like to talk design, collaborate, or just say hi — feel free to reach out.</p>
+  <div class="social">
+    <a href="mailto:shruteegawade07@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/shrutee-gawade1212" target="_blank">LinkedIn</a>
+    <a href="https://www.behance.net/shruteegawade0730" target="_blank">Behance</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Shruti Ganesh Gawade | Göttingen, Germany
+</footer>
+
+</body>
+</html>
+
+
+please help me create a link shareble landing page
